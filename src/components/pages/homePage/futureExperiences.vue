@@ -23,7 +23,7 @@ export default{
     data() {
         return {
             sessionDatas:[{
-                    img:"/front/assets/media/media/future-experiences-1.png",
+                    img:require("@/assets/media/media/future-experiences-1.png"),
                     location:"Uzaktan",
                     date:"9 Ekim 2022",
                     title:"Profesyonel Yaşamda İletişim",
@@ -31,7 +31,7 @@ export default{
                     session:"tek seans"
                 },
                 {
-                    img:"/front/assets/media/media/future-experiences-2.png",
+                    img:require("@/assets/media/media/future-experiences-2.png"),
                     location:"İstanbul(Avr)",
                     date:"9 Ekim 2022",
                     title:"Sunum görselleştirme",
@@ -39,7 +39,7 @@ export default{
                     session:"tek seans"
                 },                
                 {
-                    img:"/front/assets/media/media/future-experiences-3.png",
+                    img:require("@/assets/media/media/future-experiences-3.png"),
                     location:"İstanbul(Avr)",
                     date:"9 Ekim 2022",
                     title:"Etkili Bir Sunum Nasıl Yapılır ?",

@@ -1,10 +1,12 @@
 <template>
-  <div class="icon-button" :class="{active:isActive}">
+  <div class="icon-button" :class="{active:isActive}" v-click-outside-element="removeActive">
     <i class="fa-regular fa-user" @click="isActive=!isActive"></i>
     <div class="accountMenu">
         <div @click="passwordModalCheck = true"><span>Şifreni Değiştir</span></div>
         <div @click="choiceModalCheck = true"><span>Wellow’u Kişiselleştir</span></div>
-        <div><span>Destek Merkezi & SSS</span></div>
+        <router-link :to="{name:'FAQ'}">
+          <span>Destek Merkezi & SSS</span>
+        </router-link>
         <div @click="logout"><span>Çıkış Yap</span></div>
     </div>
   </div>
@@ -117,6 +119,9 @@
       logout(){
         this.$store.commit("logoutUser");
         this.$router.push({name:"Login"})
+      },
+      removeActive(){
+        this.isActive = false
       }
     }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="login-page">
     <div class="login-left">
-      <img src="@/front/assets/media/media/login-back.png" alt="">
+      <img src="@/assets/media/media/login-back.png" alt="">
       <div class="login-left-text">
         <h1>Merhaba!</h1>
         <h3>En esnek yan haklarla iyi yaşama hoş geldiniz.</h3>
@@ -9,7 +9,7 @@
     </div>
     <div class="login-right">
       <div class="login-logo">
-        <img src="@/front/assets/media/wellow.png" alt="">
+        <img src="@/assets/media/wellow.png" alt="">
       </div>
       <div class="login-inputs">
         <div class="wellow-inp-group">
@@ -47,14 +47,13 @@ export default{
     register() {
       this.failMail=0,
       this.failPassword=0,
-      this.$appAxios.post("/api/v1/auth/login", this.loginData,{headers:{ "Accept-Language": "tr", "Content-Type":"multipart/form-data"}})
+      this.$appAxios.post("auth/login", this.loginData,{headers:{ "Accept-Language": "tr", "Content-Type":"multipart/form-data"}})
           .then(response=>{
             this.$store.commit("setUser",response?.data.data, response?.data.data.vue_token)
             this.$store.commit("changeFirstLogin",response?.data.data?.is_first_login)
             this.$router.push({name:"Home"})
           })
           .catch(error => {
-            console.log(error)
             if(error.response?.status == 404){
                   this.failMail = 1 ;
               }

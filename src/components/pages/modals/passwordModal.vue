@@ -49,7 +49,7 @@
             </div>
           </div>
           <div class="passwordChanged" v-if="changedPassword">
-            <img src="@/front/assets/media/media/changePassword.png" alt="" class="step-img">
+            <img src="@/assets/media/media/changePassword.png" alt="" class="step-img">
             <p>Tebrikler, şifreniz oluşturuldu.</p>
           </div>
         </div>

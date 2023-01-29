@@ -68,7 +68,7 @@ export default{
         },
       },
       sessionDatas:[{
-        img:"/front/assets/media/media/company-1.png",
+        img:require("@/assets/media/media/company-1.png"),
         location:"Uzaktan",
         date:"9 Ekim 2022",
         title:"Doğuma Hazırlık Eğitimi",
@@ -76,7 +76,7 @@ export default{
         session:"4 seans"
       },
         {
-          img:"/front/assets/media/media/company-4.png",
+          img:require("@/assets/media/media/company-4.png"),
           location:"Uzaktan",
           date:"9 Ekim 2022",
           title:"Kodlama hatalarını gidermede uzmanlık",
@@ -85,14 +85,14 @@ export default{
         }
       ],
       membershipDatas:[{
-        img:"/front/assets/media/media/senyorapp.png",
+        img:require("@/assets/media/media/senyorapp.png"),
         title:"Senyorapp'le Sağlıklı Yaş Al",
         active:false,
         price:"37₺",
         session:"aylık üyelik"
       },
         {
-          img:"/front/assets/media/media/insumo.png",
+          img:require("@/assets/media/media/insumo.png"),
           title:"İnsumo Görev Yönetimi",
           active:false,
           price:"30₺",

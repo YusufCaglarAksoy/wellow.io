@@ -68,7 +68,7 @@ export default{
             },
           },
             sessionDatas:[{
-                    img:"/front/assets/media/media/company-1.png",
+                    img:require("@/assets/media/media/company-1.png"),
                     location:"Uzaktan",
                     date:"9 Ekim 2022",
                     title:"Doğuma Hazırlık Eğitimi",
@@ -76,7 +76,7 @@ export default{
                     session:"4 seans"
                 },
                 {
-                    img:"/front/assets/media/media/company-4.png",
+                    img:require("@/assets/media/media/company-4.png"),
                     location:"Uzaktan",
                     date:"9 Ekim 2022",
                     title:"Kodlama hatalarını gidermede uzmanlık",
@@ -85,14 +85,14 @@ export default{
                 }
             ],
             membershipDatas:[{
-                    img:"/front/assets/media/media/company-2.png",
+                    img:require("@/assets/media/media/company-2.png"),
                     title:"İngilizce Becerileri için Cambly",
                     active:false,
                     price:"Ücretsiz",
                     session:"aylık üyelik"
                 },
                 {
-                    img:"/front/assets/media/media/company-3.png",
+                    img:require("@/assets/media/media/company-3.png"),
                     title:"Github Premium",
                     active:false,
                     price:"Ücretsiz",

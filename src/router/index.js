@@ -4,18 +4,60 @@ const  routes = [
     {
         path:"/",
         name:"Home",
-        component: () => import("../views/home.vue"),
+        component: () => import("../views/user/home.vue"),
         meta: {
             requiresAuth: true
         },
     },
     {
-        path:"/example",
-        name:"Example",
-        component: () => import("../views/example.vue"),
+        name:"Catalog",
+        path:"/catalog",
+        component: () => import("../views/user/catalog.vue"),
         meta: {
             requiresAuth: true
         },
+        props:true,
+    },
+    {
+        name:"Favorites",
+        path:"/favorites",
+        component: () => import("../views/user/favorites.vue"),
+        meta: {
+            requiresAuth: true
+        },
+    },
+    {
+        name:"Brands",
+        path:"/brands",
+        component: () => import("../views/user/brands.vue"),
+        meta: {
+            requiresAuth: true
+        },
+    },
+    {
+        name:"FAQ",
+        path:"/faq",
+        component: () => import("../views/user/faq.vue"),
+        meta: {
+            requiresAuth: true
+        },
+    },
+    {
+        name:"EditorSelection",
+        path:"/editorSelection",
+        component: () => import("../views/user/editorSelection.vue"),
+        meta: {
+            requiresAuth: true
+        },
+    },
+    {
+        name:"Experience",
+        path:"/experience/:id",
+        component: () => import("../views/user/experience.vue"),
+        meta: {
+            requiresAuth: true
+        },
+        props:true,
     },
     {
         path:"/auth",

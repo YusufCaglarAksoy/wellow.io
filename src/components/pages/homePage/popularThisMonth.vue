@@ -28,7 +28,7 @@ export default{
     data() {
         return {
             sessionDatas:[{
-                    img:"/front/assets/media/media/detoks.png",
+                    img:require("@/assets/media/media/detoks.png"),
                     location:"İstanbul(Avr)",
                     date:"9 Ekim 2022",
                     title:"Zihinsel Detoks",
@@ -36,7 +36,7 @@ export default{
                     session:"tek seans"
                 },
                 {
-                    img:"/front/assets/media/media/ayurveda.png",
+                    img:require("@/assets/media/media/ayurveda.png"),
                     location:"Uzaktan",
                     date:"9 Ekim 2022",
                     title:"Ayurveda 'Yaşama Sanatı'",
@@ -45,14 +45,14 @@ export default{
                 }
             ],
             membershipDatas:[{
-                    img:"/front/assets/media/media/shopify.png",
+                    img:require("@/assets/media/media/shopify.png"),
                     title:"Boxing session by Macfit",
                     active:false,
                     price:"50₺",
                     session:"aylık üyelik"
                 },
                 {
-                    img:"/front/assets/media/media/istock.png",
+                    img:require("@/assets/media/media/istock.png"),
                     title:"İstock",
                     active:false,
                     price:"45₺",

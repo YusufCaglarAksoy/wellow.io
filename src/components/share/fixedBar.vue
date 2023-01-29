@@ -6,7 +6,7 @@
         <p>Son Deneyiminiz Nasıldı ? Değerlendirmek ister misiniz ?</p>
       </div>
       <div class="fixed-bar-right">
-        <img src="@/front/assets/media/media/wallet.png" alt="">
+        <img src="@/assets/media/media/wallet.png" alt="">
         <h2>750,00<span>₺</span></h2>
       </div>
     </div>

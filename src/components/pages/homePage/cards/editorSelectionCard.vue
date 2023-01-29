@@ -1,5 +1,5 @@
 <template>
-    <div class="editor-selection-card wellow-card-size">
+  <div class="editor-selection-card wellow-card-size">
         <img :src="selectionData.img" alt="">
         <div class="editor-selection-card-inner">
             <div class="inner-top">

@@ -12,7 +12,7 @@
                 <button><i class="fa-regular fa-heart"></i></button>
             </div>
             <h2>{{sessionData.title}}</h2>
-            <p><b>{{sessionData.price}}</b> / {{sessionData.session}}</p>
+            <p><b>{{sessionData.price}}₺</b> / {{sessionData.session}}</p>
         </div>
     </div>
 </template>

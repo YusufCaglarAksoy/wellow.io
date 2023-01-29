@@ -8,7 +8,7 @@
                 <h2>{{membershipData.title}}</h2>
                 <button><i class="fa-regular fa-heart"></i></button>
             </div>
-            <p><b>{{membershipData.price}}</b> / {{membershipData.session}}</p>
+            <p><b>{{membershipData.price}}₺</b> / {{membershipData.session}}</p>
         </div>
     </div>
 </template>

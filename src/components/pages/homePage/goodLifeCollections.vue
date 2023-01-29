@@ -37,75 +37,75 @@ export default{
     data() {
         return {
             collectionDatas:[{
-                    img:"/front/assets/media/media/collection-1.png",
+                    img:require("@/assets/media/media/collection-1.png"),
                     title:"Fiziksel İyi Yaşam",
                     slideImages:[
-                        "/front/assets/media/media/collection-2.png",
-                        "/front/assets/media/media/collection-3.png"
+                        require("@/assets/media/media/collection-2.png"),
+                        require("@/assets/media/media/collection-3.png")
                     ]
                 },
                 {
-                    img:"/front/assets/media/media/collection-2.png",
+                    img:require("@/assets/media/media/collection-2.png"),
                     title:"Duygusal İyi Yaşam",
                     slideImages:[
-                        "/front/assets/media/media/collection-1.png",
-                        "/front/assets/media/media/collection-3.png"
+                        require("@/assets/media/media/collection-1.png"),
+                        require("@/assets/media/media/collection-3.png")
                     ]
                 },
                 {
-                    img:"/front/assets/media/media/collection-3.png",
+                    img:require("@/assets/media/media/collection-3.png"),
                     title:"Mesleki İyi Yaşam",
                     slideImages:[
-                        "/front/assets/media/media/collection-1.png",
-                        "/front/assets/media/media/collection-2.png"
+                        require("@/assets/media/media/collection-1.png"),
+                        require("@/assets/media/media/collection-2.png")
                     ]
                 },
                 {
-                    img:"./front/assets/media/media/collection-4.png",
+                    img:require("@/assets/media/media/collection-4.png"),
                     title:"Sosyal İyi Yaşam",
                     slideImages:[
-                        "/front/assets/media/media/collection-1.png",
-                        "/front/assets/media/media/collection-2.png"
+                        require("@/assets/media/media/collection-1.png"),
+                        require("@/assets/media/media/collection-2.png")
                     ]
                 },
                 {
-                    img:"./front/assets/media/media/collection-5.png",
+                    img:require("@/assets/media/media/collection-5.png"),
                     title:"Entelektüel İyi Yaşam",
                     slideImages:[
-                        "/front/assets/media/media/collection-1.png",
-                        "/front/assets/media/media/collection-2.png"
+                        require("@/assets/media/media/collection-1.png"),
+                        require("@/assets/media/media/collection-2.png")
                     ]
                 },
                 {
-                    img:"/front/assets/media/media/collection-6.png",
+                    img:require("@/assets/media/media/collection-6.png"),
                     title:"Spiritüel İyi Yaşam",
                     slideImages:[
-                        "/front/assets/media/media/collection-1.png",
-                        "/front/assets/media/media/collection-2.png"
+                        require("@/assets/media/media/collection-1.png"),
+                        require("@/assets/media/media/collection-2.png")
                     ]
                 },
                 {
-                    img:"/front/assets/media/media/collection-7.png",
+                    img:require("@/assets/media/media/collection-7.png"),
                     title:"Çevresel İyi Yaşam",
                     slideImages:[
-                        "/front/assets/media/media/collection-1.png",
-                        "/front/assets/media/media/collection-2.png"
+                        require("@/assets/media/media/collection-1.png"),
+                        require("@/assets/media/media/collection-2.png")
                     ]
                 },
                 {
-                    img:"/front/assets/media/media/collection-8.png",
+                    img:require("@/assets/media/media/collection-8.png"),
                     title:"Finansal İyi Yaşam",
                     slideImages:[
-                        "/front/assets/media/media/collection-1.png",
-                        "/front/assets/media/media/collection-2.png"
+                        require("@/assets/media/media/collection-1.png"),
+                        require("@/assets/media/media/collection-2.png")
                     ]
                 },
                 {
-                    img:"/front/assets/media/media/collection-9.png",
+                    img:require("@/assets/media/media/collection-9.png"),
                     title:"Çocukla İyi Yaşam",
                     slideImages:[
-                        "/front/assets/media/media/collection-1.png",
-                        "/front/assets/media/media/collection-2.png"
+                        require("@/assets/media/media/collection-1.png"),
+                        require("@/assets/media/media/collection-2.png")
                     ]
                 },
             ]

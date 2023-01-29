@@ -23,7 +23,7 @@ export default{
     data() {
         return {
             sessionDatas:[{
-                    img:"/front/assets/media/media/news-wellow-3.png",
+                    img:require("@/assets/media/media/news-wellow-3.png"),
                     location:"Uzaktan",
                     date:"9 Ekim 2022",
                     title:"Stres ve depresyonla başa çıkın",
@@ -31,7 +31,7 @@ export default{
                     session:"tek seans"
                 },
                 {
-                    img:"/front/assets/media/media/news-wellow-2.png",
+                    img:require("@/assets/media/media/news-wellow-2.png"),
                     location:"İstanbul(Avr)",
                     date:"9 Ekim 2022",
                     title:"Grup Yoga Sınıfı",
@@ -40,14 +40,14 @@ export default{
                 }
             ],
             membershipDatas:[{
-                    img:"/front/assets/media/media/netflix.png",
+                    img:require("@/assets/media/media/netflix.png"),
                     title:"Netflix",
                     active:false,
                     price:"77₺",
                     session:"aylık üyelik"
                 },
                 {
-                    img:"/front/assets/media/media/storytel2.png",
+                    img:require("@/assets/media/media/storytel2.png"),
                     title:"Storytel",
                     active:false,
                     price:"50₺",

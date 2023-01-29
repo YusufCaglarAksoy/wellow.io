@@ -2,7 +2,7 @@
     <footer>
         <div class="footer-inner wellow-container">
             <div class="footer-top">
-                <img src="@/front/assets/media/wellow.png" alt="">
+                <img src="@/assets/media/wellow.png" alt="">
                 <div>
                     <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href=""><i class="fa-brands fa-instagram"></i></a>

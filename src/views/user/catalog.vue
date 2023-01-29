@@ -8,7 +8,9 @@
   <div class="catalog wellow-container">
     <catalogHeader @changedListType="changeList"/>
     <catalogButtons @filterButtons="getFilterButtons" />
-    <catalogFilters :listType="listType"/>
+    <catalogFilters :listType="listType" @filter="filter" />
+    <productList v-if="listType" :filters="filters"/>
+    <experienceList v-if="!listType" :filters="filters" />
   </div>
   <appFooter/>
 </template>
@@ -16,17 +18,22 @@
 import catalogButtons from "../../components/pages/catalog/catalogButtons.vue";
 import catalogHeader from "../../components/pages/catalog/catalogHeader.vue";
 import catalogFilters from "../../components/pages/catalog/catalogFilters.vue";
+import productList from "../../components/pages/catalog/productList.vue";
+import experienceList from "../../components/pages/catalog/experienceList.vue";
 export default {
   props: ['id'],
   components:{
     catalogButtons,
     catalogHeader,
-    catalogFilters
+    catalogFilters,
+    productList,
+    experienceList
   },
   data() {
     return {
       listType:true,
-      filter_buttons:[]
+      filters:null,
+      filter_buttons:[],
     };
   },
   methods:{
@@ -35,6 +42,9 @@ export default {
     },
     changeList(val){
       this.listType = val;
+    },
+    filter(filter){
+      this.filters = filter
     }
   }
 }

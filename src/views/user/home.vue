@@ -6,7 +6,7 @@
       <section class="entrance">
         <div class="entrance-inner wellow-container">
           <div class="entrance-left">
-            <img src="@/front/assets/media/media/person.png" alt="">
+            <img src="@/assets/media/media/person.png" alt="">
             <div class="center-div">
               <h1>Hoş Geldin Ali</h1>
               <p v-if="rated" class="rated">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi atque consequatur consequuntur cupiditate, doloribus eius, enim explicabo facere hic laboriosam neque nihil nobis optio, placeat sapiente sed sequi sunt!</p>
@@ -20,14 +20,14 @@
               </div>
             </div>
             <div class="right-div">
-              <img src="@/front/assets/media/media/statistic.png" alt="">
+              <img src="@/assets/media/media/statistic.png" alt="">
               <p>Dijital Koçunuz</p>
             </div>
           </div>
           <div class="entrance-right">
             <div class="entrance-right-top">
               <div>
-                <img src="@/front/assets/media/media/wallet.png" alt="">
+                <img src="@/assets/media/media/wallet.png" alt="">
                 <h1>Cüzdan</h1>
               </div>
               <div>

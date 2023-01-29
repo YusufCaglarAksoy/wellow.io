@@ -29,21 +29,7 @@
                     </div>
                 </swiper-slide>
                 <swiper-slide>
-                    <div class="editor-selection-card wellow-card-size">
-                        <img src="@/front/assets/media/media/editor.png" alt="">
-                        <div class="editor-selection-card-inner">
-                            <div class="inner-top">
-                                <button>Editörün Seçimi</button>
-                            </div>
-                            <h1>Yeni Doğan Paketi</h1>
-                            <div class="inner-bottom">
-                                <p><b>22₺'den </b> başlayan <b> 14 içerik</b></p>
-                                <router-link :to="{name:'Home'}" class="auth-button">
-                                    Hepsini Göster
-                                </router-link>
-                            </div>
-                        </div>
-                    </div>
+                    <editor-selection-card :selectionData="selectionDatas[0]"/>
                 </swiper-slide>
                 <swiper-slide>
                     <slideCard :slideData="slideDatas[0]"/>
@@ -67,6 +53,7 @@
     import sessionCard from './cards/sessionCard.vue'
     import membershipCard from './cards/membershipCard.vue'
     import slideCard from './cards/slideCard.vue'
+    import editorSelectionCard from "./cards/editorSelectionCard.vue";
 
     export default{
         data() {
@@ -82,15 +69,16 @@
                         prevEl: '.specialForYou-left-arrow'
                     },
                 },
-                membershipDatas:[{
-                        img:"/front/assets/media/media/senyorapp.png",
+                membershipDatas:[
+                    {
+                        img:require("@/assets/media/media/senyorapp.png"),
                         title:"Senyorapp'le Sağlıklı Yaş Al",
                         active:false,
                         price:"37₺",
                         session:"aylık üyelik"
                     },
                     {
-                        img:"/front/assets/media/media/insumo.png",
+                        img:require("@/assets/media/media/insumo.png"),
                         title:"İnsumo Görev Yönetimi",
                         active:false,
                         price:"30₺",
@@ -98,34 +86,43 @@
                     }
                 ],
                 slideDatas:[{
-                        logo:"/front/assets/media/media/neoskola.png",
+                        logo:require("@/assets/media/media/neoskola.png"),
                         backColor:"",
                         textColor:"",
                         text:"Kendini geliştirmek ve hayatta bir adım daha ileri gitmek isteyen herkesin 'en iyi' ile buluşmasını sağlıyoruz.",
                         backgroundImg:[
-                            "/front/assets/media/media/neoskola-slide-1.png",
-                            "/front/assets/media/media/neoskola-slide-2.png",
-                            "/front/assets/media/media/neoskola-slide-3.png",
+                            require("@/assets/media/media/neoskola-slide-1.png"),
+                            require("@/assets/media/media/neoskola-slide-2.png"),
+                            require("@/assets/media/media/neoskola-slide-3.png"),
                         ],
-                        backLogo:"./front/assets/media/media/neoskola.png",
+                        backLogo:require("@/assets/media/media/neoskola.png"),
                         backText:"Alanında en iyilerle 60'dan fazla eğitim seni bekliyor",
                     },
                 ],
-                sessionDatas:[{
-                  img:"/front/assets/media/media/company-1.png",
-                  location:"Uzaktan",
-                  date:"9 Ekim 2022",
-                  title:"Doğuma Hazırlık Eğitimi",
-                  price:"Ücretsiz",
-                  session:"4 seans"
-                },
+                sessionDatas:[
+                    {
+                    img:require("@/assets/media/media/company-1.png"),
+                    location:"Uzaktan",
+                    date:"9 Ekim 2022",
+                    title:"Doğuma Hazırlık Eğitimi",
+                    price:"Ücretsiz",
+                    session:"4 seans"
+                  },
                   {
-                    img:"/front/assets/media/media/company-4.png",
+                    img:require("@/assets/media/media/company-4.png"),
                     location:"Uzaktan",
                     date:"9 Ekim 2022",
                     title:"Kodlama hatalarını gidermede uzmanlık",
                     price:"Ücretsiz",
                     session:"tek seans"
+                  }
+                ],
+                selectionDatas:[
+                  {
+                    img:require("@/assets/media/media/editor.png"),
+                    title:"Yeni Doğan Paketi",
+                    price:22,
+                    count:14
                   }
                 ],
                 swiper: null,
@@ -137,6 +134,7 @@
             Swiper,
             SwiperSlide,
             sessionCard,
+            editorSelectionCard
         },
         setup() {
             return {

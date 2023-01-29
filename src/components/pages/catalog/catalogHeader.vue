@@ -1,11 +1,11 @@
 <template>
   <div class="catalog-header">
     <button :class="{active:listType}" @click="this.listType=true">
-      <img src="@/front/assets/media/media/catalog-products.png" alt="">
+      <img src="@/assets/media/media/catalog-products.png" alt="">
       Ürünler
     </button>
     <button :class="{active:!listType}" @click="this.listType=false">
-      <img src="@/front/assets/media/media/catalog-experience.png" alt="">
+      <img src="@/assets/media/media/catalog-experience.png" alt="">
       Deneyimler
     </button>
   </div>
@@ -18,7 +18,7 @@
       };
     },
     watch: {
-      listType: function(newVal, oldVal) {
+      listType: function(newVal) {
         this.$emit("changedListType",newVal)
       }
     },

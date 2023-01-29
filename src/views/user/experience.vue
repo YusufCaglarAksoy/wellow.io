@@ -19,14 +19,14 @@
             :modules="modules"
             class="mySwiper"
         >
-          <swiper-slide><img src="@/front/assets/media/media/yoga.png" alt=""></swiper-slide>
-          <swiper-slide><img src="@/front/assets/media/media/collection-1.png" alt=""></swiper-slide>
-          <swiper-slide><img src="@/front/assets/media/media/detoks.png" alt=""></swiper-slide>
-          <swiper-slide><img src="@/front/assets/media/media/news-wellow-2.png" alt=""></swiper-slide>
+          <swiper-slide><img src="@/assets/media/media/yoga.png" alt=""></swiper-slide>
+          <swiper-slide><img src="@/assets/media/media/collection-1.png" alt=""></swiper-slide>
+          <swiper-slide><img src="@/assets/media/media/detoks.png" alt=""></swiper-slide>
+          <swiper-slide><img src="@/assets/media/media/news-wellow-2.png" alt=""></swiper-slide>
         </swiper>
       </div>
       <div class="experience-educator">
-        <img src="@/front/assets/media/media/educator.png" alt="">
+        <img src="@/assets/media/media/educator.png" alt="">
         <div class="educator-title">
           <h2>Yasemin Alnıaçık,</h2>
           <p>Yoga Eğitmeni</p>
